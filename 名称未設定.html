@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link href="keijiban.css" rel="stylesheet" type="text/css" media="all">
+<title>掲示板</title>
+</head>
+<body>
+<h1>掲示板</h1>
+<section>
+    <h2>新規投稿</h2>
+    <form name="forma1">
+        タイトル<input type="text" id="title"><br>
+    </form>
+    <form name="forma2" action="javascript:toukou()">
+        <input type="submit" onclick="showMessage()" value="投稿">
+    </form>
+    <p id="output-message"></p>
+</section>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+const showMessage = () => {
+      const textbox = document.getElementById("title");
+      const inputValue = textbox.value;
+
+      const output = "タイトルは「" + inputValue + "」です。";
+      document.getElementById("output-message").innerHTML = output;
+    }
+function toukou(){
+ alert("新しいスレッドがたてられました");
+ }
+
+//-->
+</script>
+</body>
+</html>

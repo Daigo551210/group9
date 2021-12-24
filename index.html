@@ -10,10 +10,25 @@
     margin-right:300px;
     background-color:#f5f5f5;
         background-clip:border-box;
-    border-style:groove;
-    
+    border-style:groove;    
     }
-</style>   
+</style> 
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <script language="JavaScript">
+        let push = 0;
+        let like = 0;
+        function Like(){
+            push += 1;
+            if(push%2 == 1){
+                like += 1;
+            document.getElementById("textLike").textContent = like;
+            }
+            else{
+                like -= 1;
+            document.getElementById("textLike").textContent = like;            
+            }
+        }
+    </script>
 </HEAD>
 <BODY bgcolor="#FFFFFF">
 <FONT size="18" color="navy">
@@ -22,6 +37,14 @@ UT Chat Board へようこそ<BR>
 </CENTER>
 <div class = board_box>
 ここに掲示板が入る
+    <form name="form1" action="javascropt:Like()">
+        <input type="submit" value="いいね">
+        <br>
+    </form>
+    <form name="form2">
+        "いいね数"
+        <span id="textLike">0</span>
+    </form>
 </div>
     
 </BODY>

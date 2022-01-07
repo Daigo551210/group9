@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link href="pageone.css" rel="stylesheet" type="text/css" media="all">
+<title>一枚目</title>
+</head>
+<body>
+<textarea id="input"></textarea>
+<div>
+    <button id="save">Save</button>
+</div>
+<script language="JavaScript" type="text/javascript">
+(function (global) {
+    document.getElementById("save").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData", document.getElementById("input").value);
+    }, false);
+}(window));
+</script>
+</body>
+</html>

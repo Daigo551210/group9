@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link href="pagetwo.css" rel="stylesheet" type="text/css" media="all">
+<title>２枚目</title>
+</head>
+<body>
+<textarea id="output"></textarea>
+<script language="JavaScript" type="text/javascript">
+(function (global) {
+    document.getElementById("output").value = global.localStorage.getItem("mySharedData");
+}(window));
+</script>
+</body>
+</html>

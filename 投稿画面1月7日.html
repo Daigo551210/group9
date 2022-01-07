@@ -6,6 +6,30 @@
 <title>投稿画面</title>
 </head>
 <body>
+<style>
+    div#one{
+        display:block;
+    }
+    div#two{
+        display:none;
+    }
+    div#three{
+        display:none;
+    }
+    div#four{
+        display:none;
+    }
+    div#five{
+        display:none;
+    }
+    div#six{
+        display:none;
+    }
+    div#seven{
+        display:none;
+    }
+    
+    </style>
 <FONT size="5" color="navy">
 <center><h1>投稿画面</h1></center>
 </FONT>
@@ -95,36 +119,57 @@
 (function (global) {
     document.getElementById("save1").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData1", document.getElementById("input1").value);
+        global.localStorage.setItem("button1", 'block');
+        document.getElementById('one').style.display = 'none';
+        document.getElementById('two').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save2").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData2", document.getElementById("input2").value);
+        global.localStorage.setItem("button2", 'block');
+        document.getElementById('two').style.display = 'none';
+        document.getElementById('three').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save3").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData3", document.getElementById("input3").value);
+        global.localStorage.setItem("button3", 'block');
+        document.getElementById('three').style.display = 'none';
+        document.getElementById('four').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save4").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData4", document.getElementById("input4").value);
+        global.localStorage.setItem("button4", 'block');
+        document.getElementById('four').style.display = 'none';
+        document.getElementById('five').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save5").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData5", document.getElementById("input5").value);
+        global.localStorage.setItem("button5", 'block');
+        document.getElementById('five').style.display = 'none';
+        document.getElementById('six').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save6").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData6", document.getElementById("input6").value);
+        global.localStorage.setItem("button6", 'block');
+        document.getElementById('six').style.display = 'none';
+        document.getElementById('seven').style.display = 'block';
     }, false);
 }(window));
 (function (global) {
     document.getElementById("save7").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData7", document.getElementById("input7").value);
+        global.localStorage.setItem("button7", 'block');
+        document.getElementById('seven').style.display = 'none';
+        document.getElementById('one').style.display = 'block';
     }, false);
 }(window));
 </script>

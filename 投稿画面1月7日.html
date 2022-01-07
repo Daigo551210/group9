@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link href="keijiban.css" rel="stylesheet" type="text/css" media="all">
+<title>投稿画面</title>
+</head>
+<body>
+<FONT size="5" color="navy">
+<center><h1>投稿画面</h1></center>
+</FONT>
+<section>
+    <FONT size="5" color="navy">
+    <center><h2>新規投稿</h2></center>
+    </FONT>
+    <form name="forma1">
+       <center>
+        タイトル1<br>
+        <textarea id="input1"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save1" style="position: absolute; left: 48%">投稿</button>
+    </div><form name="forma2">
+        <center>
+        タイトル2<br>
+        <textarea id="input2"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save2" style="position: absolute; left: 48%">投稿</button>
+    </div><form name="forma3">
+        <center>
+        タイトル3<br>
+        <textarea id="input3"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save3" style="position: absolute; left: 48%">投稿</button>
+    </div><form name="forma4">
+        <center>
+        タイトル4<br>
+        <textarea id="input4"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save4" style="position: absolute; left: 48%">投稿</button>
+    </div><form name="forma5">
+         <center>
+        タイトル5<br>
+        <textarea id="input5"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save5" style="position: absolute; left: 48%">投稿</button>
+    </div>
+    <form name="forma6">
+         <center>
+        タイトル6<br>
+        <textarea id="input6"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save6" style="position: absolute; left: 48%">投稿</button>
+    </div><form name="forma7">
+         <center>
+        タイトル7<br>
+        <textarea id="input7"></textarea><br>
+        </center>
+    </form>
+   <div>
+   <button id="save7" style="position: absolute; left: 48%">投稿</button>
+    </div>
+</section>
+<script language="JavaScript" type="text/javascript">
+(function (global) {
+    document.getElementById("save1").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData1", document.getElementById("input1").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save2").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData2", document.getElementById("input2").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save3").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData3", document.getElementById("input3").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save4").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData4", document.getElementById("input4").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save5").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData5", document.getElementById("input5").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save6").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData6", document.getElementById("input6").value);
+    }, false);
+}(window));
+(function (global) {
+    document.getElementById("save7").addEventListener("click", function () {
+        global.localStorage.setItem("mySharedData7", document.getElementById("input7").value);
+    }, false);
+}(window));
+</script>
+</body>
+</html>

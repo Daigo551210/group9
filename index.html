@@ -28,6 +28,10 @@
             document.getElementById("textLike").textContent = like;            
             }
         }
+        (function (global) {
+    document.getElementById("output").value = global.localStorage.getItem("mySharedData");
+}(window));
+
     </script>
 </HEAD>
 <BODY bgcolor="#FFFFFF">
@@ -46,6 +50,6 @@ UT Chat Board へようこそ<BR>
         <span id="textLike">0</span>
     </form>
 </div>
-    
+<textarea id="output"></textarea>    
 </BODY>
 </HTML>

@@ -24,22 +24,47 @@
     border-style:groove;
     }
     
+    div#minimum_unit_b{
+    font-size:15;
+    margin-left:30px;
+    margin-right:30px;
+    height:80px;
+    background-color:#f5deb3;
+        background-clip:border-box;
+    border-style:groove;
+    }
+    
 </style> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script language="JavaScript">
-        let push = 0;
-        let like = 0;
-        function Like(){
-            push += 1;
-            if(push%2 == 1){
-                like += 1;
-            document.getElementById("textLike").textContent = like;
+        let push_a = 0;
+        let like_a = 0;
+        function Like_a(){
+            push_a += 1;
+            if(push_a%2 == 1){
+                like_a += 1;
+            document.getElementById("textLike_a").textContent = like_a;
             }
             else{
-                like -= 1;
-            document.getElementById("textLike").textContent = like;            
+                like_a -= 1;
+            document.getElementById("textLike_a").textContent = like_a;            
             }
         }
+        
+        let push_b= 0;
+        let like_b= 18;
+        function Like_b(){
+            push_b += 1;
+            if(push_b%2 == 1){
+                like_b += 1;
+            document.getElementById("textLike_b").textContent = like_b;
+            }
+            else{
+                like_b -= 1;
+            document.getElementById("textLike_b").textContent = like_b;            
+            }
+        }
+        
         (function (global) {
     document.getElementById("output").value = global.localStorage.getItem("mySharedData");
 }(window));
@@ -54,18 +79,45 @@ UT Chat Board へようこそ<BR>
 </CENTER>
 <div id = board_box>
 ここに掲示板が入る
-    <form name="form1" action="javascropt:Like()">
-        <input type="submit" value="いいね">
-        <br>
-    </form>
-    <form name="form2">
-        "いいね数"
-        <span id="textLike">0</span>
-    </form>
-    <div id = minimum_unit_a>
+<br>
+    <div id="minimum_unit_a">
     タイトル：
-    <div id = output>
+    <div style='display:flex;'>
+        <form name="form12">
+            投稿者名:
+            <span id="textTitle">人名</span>
+            <br>
+        </form>
+        <form name="form13">
+        　　    いいね:
+            <span id="textLike_a">34</span>
+            <br>
+        </form>
+        <form name="form1" action="javascript:Like_a()">
+            <input type="submit" value="👍">
+            <br>
+        </form>
+    </div> 
     </div>
+
+    <div id="minimum_unit_b">
+        タイトル：
+        <div style='display:flex;'>
+        <form name="form12">
+                投稿者名:
+            <span id="textTitle">人名</span>
+            <br>
+        </form>
+        <form name="form13">
+            　　 いいね:
+            <span id="textLike_b">18</span>
+            <br>
+        </form>
+        <form name="form1" action="javascript:Like_b()">
+            <input type="submit" value="👍">
+            <br>
+        </form>
+    </div> 
     </div>
 </div>
 <textarea id="output"></textarea>    

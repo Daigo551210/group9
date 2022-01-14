@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<link href="keijiban.css" rel="stylesheet" type="text/css" media="all">
+<!--<link href="keijiban.css" rel="stylesheet" type="text/css" media="all">-->
 <title>投稿画面</title>
 </head>
 <body>
@@ -43,6 +43,10 @@
         タイトル1<br>
         <textarea id="input1"></textarea><br>
         </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input1w"></textarea><br>
+        </center>
     </form>
    <div>
    <button id="save1" style="position: absolute; left: 48%">投稿</button>
@@ -53,6 +57,10 @@
         <center>
         タイトル2<br>
         <textarea id="input2"></textarea><br>
+        </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input2w"></textarea><br>
         </center>
     </form>
    <div>
@@ -65,6 +73,10 @@
         タイトル3<br>
         <textarea id="input3"></textarea><br>
         </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input3w"></textarea><br>
+        </center>
     </form>
    <div>
    <button id="save3" style="position: absolute; left: 48%">投稿</button>
@@ -75,6 +87,10 @@
         <center>
         タイトル4<br>
         <textarea id="input4"></textarea><br>
+        </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input4w"></textarea><br>
         </center>
     </form>
    <div>
@@ -87,6 +103,10 @@
         タイトル5<br>
         <textarea id="input5"></textarea><br>
         </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input5w"></textarea><br>
+        </center>
     </form>
    <div>
    <button id="save5" style="position: absolute; left: 48%">投稿</button>
@@ -98,6 +118,10 @@
         タイトル6<br>
         <textarea id="input6"></textarea><br>
         </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input6w"></textarea><br>
+        </center>
     </form>
    <div>
    <button id="save6" style="position: absolute; left: 48%">投稿</button>
@@ -108,6 +132,10 @@
          <center>
         タイトル7<br>
         <textarea id="input7"></textarea><br>
+        </center>
+       <center>
+        投稿者名<br>
+        <textarea id="input7w"></textarea><br>
         </center>
     </form>
    <div>
@@ -126,6 +154,7 @@
 (function (global) {
     document.getElementById("save1").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData1", document.getElementById("input1").value);
+        global.localStorage.setItem("mySharedData1w", document.getElementById("input1w").value);
         global.localStorage.setItem("button1", 'block');
         document.getElementById('one').style.display = 'none';
         document.getElementById('two').style.display = 'block';
@@ -134,6 +163,7 @@
 (function (global) {
     document.getElementById("save2").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData2", document.getElementById("input2").value);
+        global.localStorage.setItem("mySharedData2w", document.getElementById("input2w").value);
         global.localStorage.setItem("button2", 'block');
         document.getElementById('two').style.display = 'none';
         document.getElementById('three').style.display = 'block';
@@ -142,6 +172,7 @@
 (function (global) {
     document.getElementById("save3").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData3", document.getElementById("input3").value);
+        global.localStorage.setItem("mySharedData3w", document.getElementById("input3w").value);
         global.localStorage.setItem("button3", 'block');
         document.getElementById('three').style.display = 'none';
         document.getElementById('four').style.display = 'block';
@@ -150,6 +181,7 @@
 (function (global) {
     document.getElementById("save4").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData4", document.getElementById("input4").value);
+        global.localStorage.setItem("mySharedData4w", document.getElementById("input4w").value);
         global.localStorage.setItem("button4", 'block');
         document.getElementById('four').style.display = 'none';
         document.getElementById('five').style.display = 'block';
@@ -158,6 +190,7 @@
 (function (global) {
     document.getElementById("save5").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData5", document.getElementById("input5").value);
+        global.localStorage.setItem("mySharedData5w", document.getElementById("input5w").value);
         global.localStorage.setItem("button5", 'block');
         document.getElementById('five').style.display = 'none';
         document.getElementById('six').style.display = 'block';
@@ -166,6 +199,7 @@
 (function (global) {
     document.getElementById("save6").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData6", document.getElementById("input6").value);
+        global.localStorage.setItem("mySharedData6w", document.getElementById("input6w").value);
         global.localStorage.setItem("button6", 'block');
         document.getElementById('six').style.display = 'none';
         document.getElementById('seven').style.display = 'block';
@@ -174,6 +208,7 @@
 (function (global) {
     document.getElementById("save7").addEventListener("click", function () {
         global.localStorage.setItem("mySharedData7", document.getElementById("input7").value);
+        global.localStorage.setItem("mySharedData7w", document.getElementById("input7w").value);
         global.localStorage.setItem("button7", 'block');
         document.getElementById('seven').style.display = 'none';
         document.getElementById('one').style.display = 'block';
